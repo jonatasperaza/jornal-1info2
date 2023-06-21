@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="../img/6073874.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,15 @@
 <body>
 <div class="tlogin">
     <div class="fp">
-        Usuario <br>
-        <input type="text" id="user">   
-        Senha <br>
-        <input type="pass" id="password">      
+        <img src="../img/603874.png" alt="" id="imgl">
     </div>
-    <div class="usr"></div>
+    <div class="usr">
+        <input type="text" id="user" class="userc"> 
+        <label for="user">nome</label><br>
+        <input type="pass" id="password" class="passwordc"> 
+        <label for="password">senha</label><br>
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+    </div>
 </div>
     
 </body>

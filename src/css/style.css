@@ -1,0 +1,18 @@
+.userc, .passwordc {
+text-align: center;
+
+}
+.tlogin {
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+    
+
+}
+.ft{
+    display: none;
+}
+#imgl {
+    max-width: 10%;
+}
