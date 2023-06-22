@@ -21,23 +21,11 @@ function fazerLogin() {
     if (usuario && senha) {
         if (localStorage.getItem(usuario) === senha) {
             alert("Login bem-sucedido.");
-            window.location="Index.html"
+            window.location="jornal.html"
         } else {
             alert("Usuário ou senha inválidos.");
         }
     } else {
         alert("Informe o nome de usuário e senha.");
     }
-}
-document.onkeydown = checkKey;
-
-function checkKey(e) {
-
-    e = e || window.event;
-
-    if (e.keyCode == '38' && e.keyCode == '38' && e.keyCode == "40" && e.keyCode == "40" && e.keyCode == '37' && e.keyCode == '39') {
-        alert("aimeucu")
-    }
-   
-
 }
