@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="shortcut icon" href="../img/icone-mine.png" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jornal.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jornal</title>
 </head>
 <body>
-    minecraft jornal em contrução aguardem..
+    <div id="perfil">
+        <h1>Perfil do Usuário</h1>
+        <div id="imagemPerfil"></div>
+    </div>
+
+    <script>
+        // Recupera os dados do usuário do sessionStorage
+        let usuarioLogado = sessionStorage.getItem("usuarioLogado");
+        let imagemPerfil = sessionStorage.getItem("imagemPerfil");
+
+        // Verifica se o usuário está logado
+        if (usuarioLogado && imagemPerfil) {
+            // Exibe o nome de usuário e a imagem de perfil
+            document.getElementById("perfil").innerHTML += `
+                <p>Usuário: ${usuarioLogado}</p>
+                <img src="${imagemPerfil}" alt="Imagem de Perfil">
+            `;
+        } else {
+            // Caso o usuário não esteja logado, redireciona para a página de login
+            window.location.href = "login.html";
+        }
+    </script>
 </body>
 </html>
