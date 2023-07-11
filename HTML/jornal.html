@@ -9,27 +9,30 @@
     <title>Jornal</title>
 </head>
 <body>
+<header class="header1">
+    <div>
+        <button class="btn-header" onclick="abrirmenu()"><img src="../img/menu.png" alt="icone_menu" class="imagem-perfil-header"></button>
+    </div>
+    <div class="titulo-header centralizar">
+        <h1>Jornal do vilager
+        </h1>
+    </div>
+    <p class="p-header">Perfil</p>
     <div id="perfil">
-        <h1>Perfil do Usuário</h1>
+        
         <div id="imagemPerfil"></div>
     </div>
+</header>
+<div class="menu" id="menu">
+    <ul>
+       <li>tese</li>
+       <li>tese</li>
+       <li>tese</li>
+       <li>teste</li>
+    </ul>
+</div>
 
-    <script>
-        // Recupera os dados do usuário do sessionStorage
-        let usuarioLogado = sessionStorage.getItem("usuarioLogado");
-        let imagemPerfil = sessionStorage.getItem("imagemPerfil");
-
-        // Verifica se o usuário está logado
-        if (usuarioLogado && imagemPerfil) {
-            // Exibe o nome de usuário e a imagem de perfil
-            document.getElementById("perfil").innerHTML += `
-                <p>Usuário: ${usuarioLogado}</p>
-                <img src="${imagemPerfil}" alt="Imagem de Perfil">
-            `;
-        } else {
-            // Caso o usuário não esteja logado, redireciona para a página de login
-            window.location.href = "login.html";
-        }
-    </script>
+<script src="../js/main.js">
+</script>
 </body>
 </html>

@@ -2,12 +2,39 @@
 :root {
     background-image: url(../img/tela-fundo.png);
 /*core*/
---cor-prin: color: #586C39;
---cor-secu: color: #87A8F7;
---cor-terc: color: #593C2C;
+--cor-prin:#586C39;
+--cor-secu:#87A8F7;
+--cor-terc:#593C2C;
 /*fontes*/
 --fonte-mine:'Minecraft',sans-serif;                                  
 }
-h1{
-    font-family: var(--fonte-mine);
+.header1{
+    height: 65px;
+    background-color: var(--cor-prin);
+    position: sticky;
+    top: 0;
+    z-index: 100001;
+    box-shadow: 0 2px 3px -2px #000;
+    display: flex;
+}
+.imagem-perfil-header{
+    border-radius: 50%;
+    max-width: 56px;
+}
+.centralizar{
+    margin: auto;
+}
+.p-header{
+    padding-right: 5px;
+}
+.perfil-header{
+border: 1px solid black;
+}
+.btn-header{
+    cursor: pointer;
+    background-color: var(--cor-prin);
+}
+.menu{
+    background-color: var(--cor-secu);
+    display: none;
 }
