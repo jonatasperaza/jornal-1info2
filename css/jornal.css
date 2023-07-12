@@ -1,51 +1,62 @@
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+@import url("https://fonts.cdnfonts.com/css/minecraft-4");
 :root {
-    background-image: url(../img/tela-fundo.png);
-/*core*/
---cor-prin:#586C39;
---cor-secu:#87A8F7;
---cor-terc:#593C2C;
-/*fontes*/
---fonte-mine:'Minecraft',sans-serif;                                  
+  background-image: url(../img/tela-fundo.png);
+  /*core*/
+  --cor-prin: #586c39;
+  --cor-secu: #87a8f7;
+  --cor-terc: #593c2c;
+  /*fontes*/
+  --fonte-mine: "Minecraft", sans-serif;
 }
-.header1{
-    background-color: var(--cor-prin);
-    position: sticky;
-    top: 0;
-    z-index: 100001;
-    box-shadow: 0 2px 3px -2px #000;
-    display: flex;
+.header1 {
+  background-color: var(--cor-prin);
+  position: sticky;
+  top: 0;
+  z-index: 100001;
+  box-shadow: 0 2px 3px -2px #000;
+  display: flex;
 }
-.imagem-perfil-header{
-    width: 56px;
-}    
-.p-header{
-    padding-right: 5px;
+.imagem-perfil-header {
+  width: 56px;
 }
-.perfil-header{
-border: 1px solid black;
-
+.p-header {
+  padding-right: 5px;
 }
-.btn-header{
-    cursor: pointer;
-    background-color: var(--cor-prin);
-    border: 1px solid black;
+.perfil-header {
+  border: 1px solid black;
 }
-.menu{
-    background-color: var(--cor-secu);
-    display: none;
+.btn-header {
+  cursor: pointer;
+  background-color: var(--cor-prin);
+  border: 1px solid black;
 }
-#btnmenu{
-    width: 74px;
-    height: 88px;
-} 
-.titulo-header{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    
+.menu {
+  background-color: var(--cor-secu);
+  display: none;
 }
-.btnheader1{
-    width: 74px;
-    height: 81px;
+#btnmenu {
+  width: 88px;
+  height: 88px;
+  border: none;
+}
+.titulo-header {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.btnheader1 {
+  width: 74px;
+  height: 81px;
+}
+#foto-perfil{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s ease-in-out;
+}
+#foto-perfil:hover{
+    box-shadow: 0 0 10px 2px whitesmoke;
+    transition: 0.2s;
 }

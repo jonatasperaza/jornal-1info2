@@ -44,3 +44,7 @@
 width: 21px;
 
 }
+span{
+    display: inline-flex;
+    margin: auto;
+}
