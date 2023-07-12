@@ -11,5 +11,10 @@ if (usuarioLogado && imagemPerfil) {
 
 let menu = document.getElementById("menu");
 function abrirmenu() {
-  menu.style.display = "block";
+  if (menu.style.display == "block"){
+    menu.style.display = "none";
+  }
+  else {
+    menu.style.display = "block";
+  }
 }

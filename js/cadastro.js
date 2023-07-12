@@ -40,12 +40,16 @@ function fazerLogin() {
             if (dadosUsuario.senha === senha) {
                 alert("Login bem-sucedido.");
 
-                // Armazena o nome de usuário e a imagem de perfil no sessionStorage
+                // Armazena o nome de usuário no sessionStorage
                 sessionStorage.setItem("usuarioLogado", usuario);
-                sessionStorage.setItem("imagemPerfil", dadosUsuario.imagem);
-
+                window.location.href = "jornal.html";
+                // Verifica se a imagem de perfil está disponível
+                if (dadosUsuario.imagem) {
+                    document.getElementById("perfil").src = dadosUsuario.imagem;
+                }
                 // Redireciona para a página jornal.html
                 window.location.href = "jornal.html";
+                // Ou execute outras ações necessárias para a área logada
             } else {
                 alert("Senha incorreta.");
             }
