@@ -18,8 +18,7 @@
     display: flex;
 }
 .imagem-perfil-header{
-    border-radius: 50%;
-    max-width: 56px;
+    width: 56px;
 }
 .centralizar{
     margin: auto;
@@ -33,8 +32,21 @@ border: 1px solid black;
 .btn-header{
     cursor: pointer;
     background-color: var(--cor-prin);
+    border: 1px solid black;
 }
 .menu{
     background-color: var(--cor-secu);
     display: none;
+}
+#seuPai{
+
+
+}
+#seuPapai{
+    width: 74px;
+    height: 66.8px;
+}
+.vaiTomaNoCuJonatas{
+    width: 74px;
+    height: 58px;     
 }
