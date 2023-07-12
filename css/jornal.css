@@ -38,11 +38,10 @@ border: 1px solid black;
     background-color: var(--cor-secu);
     display: none;
 }
-#seuPapai{
+#btnmenu, .btnheader1{
     width: 74px;
-    height: 66.8px;
+    height: 58px;
 }
-.vaiTomaNoCuJonatas{
-    width: 74px;
-    height: 58px;     
+.titulo-header{
+    padding: auto;
 }
