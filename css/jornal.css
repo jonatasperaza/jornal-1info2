@@ -9,7 +9,6 @@
 --fonte-mine:'Minecraft',sans-serif;                                  
 }
 .header1{
-    height: 65px;
     background-color: var(--cor-prin);
     position: sticky;
     top: 0;
@@ -19,15 +18,13 @@
 }
 .imagem-perfil-header{
     width: 56px;
-}
-.centralizar{
-    margin: auto;
-}
+}    
 .p-header{
     padding-right: 5px;
 }
 .perfil-header{
 border: 1px solid black;
+
 }
 .btn-header{
     cursor: pointer;
@@ -38,10 +35,17 @@ border: 1px solid black;
     background-color: var(--cor-secu);
     display: none;
 }
-#btnmenu, .btnheader1{
+#btnmenu{
     width: 74px;
-    height: 58px;
-}
+    height: 88px;
+} 
 .titulo-header{
-    padding: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btnheader1{
+    width: 74px;
+    height: 81px;
 }
