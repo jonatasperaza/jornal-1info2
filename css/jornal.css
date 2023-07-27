@@ -60,3 +60,17 @@
     box-shadow: 0 0 10px 2px whitesmoke;
     transition: 0.2s;
 }
+.perfil-geral {
+  background-color: white;
+  display: flex;
+  margin: 20% 30%;
+  flex-direction: column
+}
+.perfil-exibir{
+  display: flex;
+  justify-content: flex-end;
+}
+.alterar-senha{
+  flex-direction: column;
+  display: flex;
+}

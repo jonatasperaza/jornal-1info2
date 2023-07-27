@@ -42,6 +42,7 @@ function fazerLogin() {
 
                 // Armazena o nome de usuário e a imagem de perfil no sessionStorage
                 sessionStorage.setItem("usuarioLogado", usuario);
+                sessionStorage.setItem("senhaLogada", senha);
                 sessionStorage.setItem("imagemPerfil", dadosUsuario.imagem);
 
                 // Redireciona para a página jornal.html

@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <link rel="stylesheet" href="../css/jornal.css">
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link rel="stylesheet" href="../css/jornal.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-</head>
-<body>
-    <div class="perfil-geral centralizar" id="perfil-perfil">
-        <button onclick="ExibirPerfil()">Exibit</button>
-        
+  </head>
+  <body>
+    <div class="perfil-geral" id="perfil-perfil">
+      <div class="perfil-exibir">
+        <button onclick="ExibirPerfil()">Exibir</button>
+      </div>
+      <div class="perfil-foto" id="perfil-foto"></div>
+      <div class="perfil-nome" id="perfil-nome"></div>
+      <div class="perfil-senha" id="perfil-senha"></div>
+      <div class="alterar-senha">
+        <p>Alterar Senha</p>
+        <input type="password" placeholder="Senha antiga" id="senhaantiga"/>
+        <input type="password" placeholder="Senha nova" id="senhanova" />
+        <input type="password" placeholder="Confirmar senha" id="senhaconfirma" />
+        <button type="submit" onclick="Salvarperfil()">Salvar</button>
+      </div>
     </div>
-    
-</body>
-<script src="../js/main.js"></script>
+  </body>
+  <script src="../js/main.js"></script>
 </html>

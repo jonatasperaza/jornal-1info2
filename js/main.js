@@ -1,4 +1,5 @@
 //foto de perfil e usuario logado//
+let senhaLogada = sessionStorage.getItem("senhaLogada")
 let usuario = sessionStorage.getItem("usuario");
 let senha = sessionStorage.getItem("senha");
 let usuarioLogado = sessionStorage.getItem("usuarioLogado");
@@ -21,5 +22,9 @@ function abrirmenu() {
   }
 }
 function ExibirPerfil() {
-
+  if (usuarioLogado && imagemPerfil) {
+    document.getElementById("perfil-foto").innerHTML = `<img src="${imagemPerfil}" alt="">`
+    document.getElementById("perfil-nome").innerHTML = `<p>${usuarioLogado}<\p>`
+    document.getElementById("perfil-senha").innerHTML = `<p>${senhaLogada}<\p>`
+  }
 }
