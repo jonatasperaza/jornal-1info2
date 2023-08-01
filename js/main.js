@@ -1,12 +1,11 @@
 //foto de perfil e usuario logado//
+let senhanova = document.getElementById("senhanova");
+let senhaconfirma = document.getElementById("senhaconfirma");
 let senhaLogada = sessionStorage.getItem("senhaLogada")
 let usuario = sessionStorage.getItem("usuario");
 let senha = sessionStorage.getItem("senha");
 let usuarioLogado = sessionStorage.getItem("usuarioLogado");
 let imagemPerfil = sessionStorage.getItem("imagemPerfil");
-let senhaantiga = document.getElementById("senhaantiga");
-let senhanova = document.getElementById("senhanova");
-let senhaconfirma = document.getElementById("senhaconfirma");
 if (usuarioLogado && imagemPerfil) {
   document.getElementById("perfil").innerHTML += `
                 <a href="perfil.html"><button class="btn-header" id="btnmenu" onclick="irperfil()" ><img src="${imagemPerfil}" alt="Imagem de Perfil" class="imagem-perfil-header centralizar perfil-header  btn-header" id="foto-perfil"></button><\a>
@@ -32,7 +31,12 @@ function ExibirPerfil() {
   }
 }
 function Salvarperfil() {
-  if (senhaantiga == senhaLogada && senhanova == senhaconfirma){
+  if (senhanova == senhaconfirma){
+    localStorage.setItem(usuario, JSON.stringify({ senha: senha }));
     alert(`A senha foi alterada com sucesso`)
+  }
+    else if (senhanova != senhaconfirma){
+      alert("Senha incorreta")
+    }
 }
-}
+
