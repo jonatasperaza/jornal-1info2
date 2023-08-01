@@ -33,5 +33,6 @@ function ExibirPerfil() {
 }
 function Salvarperfil() {
   if (senhaantiga == senhaLogada && senhanova == senhaconfirma){
-    localStorage.setItem("senha
+    alert(`A senha foi alterada com sucesso`)
+}
 }
