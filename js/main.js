@@ -1,6 +1,3 @@
-//foto de perfil e usuario logado//
-let senhanova = document.getElementById("senhanova");
-let senhaconfirma = document.getElementById("senhaconfirma");
 let senhaLogada = sessionStorage.getItem("senhaLogada")
 let usuario = sessionStorage.getItem("usuario");
 let senha = sessionStorage.getItem("senha");
@@ -14,10 +11,11 @@ if (usuarioLogado && imagemPerfil) {
   window.location.href = "Index.html";
 }
 
-let menu = document.getElementById("menu");
+let menu = document.getElementById("menu");perfil
 function abrirmenu() {
   if (menu.style.display == "block"){
     menu.style.display = "none";
+
   }
   else {
     menu.style.display = "block";
@@ -25,18 +23,18 @@ function abrirmenu() {
 }
 function ExibirPerfil() {
   if (usuarioLogado && imagemPerfil) {
-    document.getElementById("perfil-foto").innerHTML = `<img src="${imagemPerfil}" alt="" id="perfil-foto-">`
-    document.getElementById("perfil-nome").innerHTML = `<p>${usuarioLogado}<\p>`
-    document.getElementById("perfil-senha").innerHTML = `<p>${senhaLogada}<\p>`
-  }
-}
-function Salvarperfil() {
-  if (senhanova == senhaconfirma){
-    localStorage.setItem(usuario, JSON.stringify({ senha: senha }));
-    alert(`A senha foi alterada com sucesso`)
-  }
-    else if (senhanova != senhaconfirma){
-      alert("Senha incorreta")
+    const ftnmse = document.getElementById("ftnmse");
+    if (ftnmse.style.display == "block") {
+      ftnmse.style.display = "none";
     }
+    else {
+      ftnmse.style.display = "block";
+      document.getElementById("perfil-foto").innerHTML = `<img src="${imagemPerfil}" alt="" id="perfil-foto-">`
+      document.getElementById("perfil-nome").innerHTML = `<p>${usuarioLogado}<\p>`
+      document.getElementById("perfil-senha").innerHTML = `<p>${senhaLogada}<\p>`
+    }
+    
+  }
 }
+
 
