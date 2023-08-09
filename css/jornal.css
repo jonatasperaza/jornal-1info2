@@ -33,6 +33,7 @@
 .menu {
   background-color: var(--cor-secu);
   display: none;
+  transition: all 0.5s;
 }
 #btnmenu {
   width: 88px;
@@ -81,4 +82,7 @@
   margin: auto;
   justify-content: center;
   display: flex;
+}
+#t1tt{
+  font-family: var(--fonte-mine);
 }
