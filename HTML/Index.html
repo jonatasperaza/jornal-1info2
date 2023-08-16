@@ -16,7 +16,7 @@
     <input type="text" id="user" class="userc" placeholder="Nome">
     <input type="password" id="password" class="userc" placeholder="Senha">
     <input type="submit" class="btn" onclick="fazerLogin();" value="Login"  />
-    <input type="submit" class="btn" onclick="cadastrar();" value="cadastrar" />
+    <input type="submit" class="btn" onclick="cadastrar()" value="cadastrar" />
     <label for="fotoPerfil">Foto de Perfil:</label>
     <span> 
         <img src="../img/icone-ficheiro.png" alt="" id="imgfiche">
@@ -28,4 +28,5 @@
 </div>
 </body>
 </html>
-<script src="../js/cadastro.js"></script>
+<script src="../js/node_modules/bcrypt/bcrypt.js"></script>
+<script src="../js/cadastro2.js"></script>
