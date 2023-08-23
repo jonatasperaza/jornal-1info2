@@ -3,6 +3,7 @@
   cursor: url(https://w7.pngwing.com/pngs/766/77/png-transparent-minecraft-pocket-edition-minecraft-story-mode-pickaxe-others-angle-text-pickaxe-thumbnail.png), default;
 
   background-image: url(../img/tela-fundo.png);
+  background-size: auto;
   /*cores*/
   --cor-prin: #586c39;
   --cor-secu: #87a8f7;
@@ -10,7 +11,8 @@
   /*fontes*/
   --fonte-mine: "Minecraft", sans-serif;
 }
-body {
+
+html:hover {
   cursor: url('https://w7.pngwing.com/pngs/766/77/png-transparent-minecraft-pocket-edition-minecraft-story-mode-pickaxe-others-angle-text-pickaxe-thumbnail.png') default;
 }
 .header1 {
@@ -35,6 +37,15 @@ body {
   background-color: var(--cor-prin);
   border: 1px solid black;
 }
+
+.btn-header:hover {
+  cursor: pointer;
+  background-color: var(--cor-prin);
+  border: 1px solid black;
+  animation-name: fotogira;
+  animation-duration: 5s;
+}
+
 .menu {
   background-color: var(--cor-secu);
   display: none;
@@ -44,6 +55,7 @@ body {
   width: 88px;
   height: 88px;
   border: none;
+  border-radius: 50%;
 }
 .titulo-header {
   margin: auto;
@@ -53,6 +65,7 @@ body {
 .btnheader1 {
   width: 74px;
   height: 81px;
+
 }
 #foto-perfil{
     border-radius: 50%;
@@ -99,6 +112,8 @@ a{
   width: 45%;
   margin: 20px;
   text-align: center;
+  color: var(--cor-secu);
+  font-family: var(--fonte-mine);
 }
 .Topics-image {
   width: 300px;
@@ -115,12 +130,30 @@ main {
 }
 ::-webkit-scrollbar {
   width: 30px;
-  background-color: var(--cor-prin);
+  background-color: var(--cor-secu);
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--cor-terc);
   border-radius: 10px;
 }
-@media screen and (max-width: 767) {
-  
+@media screen and (max-width: 767px) {
+
+.Topics-image{
+  width: 150px;
+  height: 100px;
+ padding: 0px;
+}
+#perfil-foto-{
+  width: 200px;
+  height: 150px;
+}
+
+}
+@keyframes fotogira {
+  from{
+    rotate: 0deg;
+  }
+  to{
+    rotate: 360deg;
+  }
 }
