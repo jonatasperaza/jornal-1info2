@@ -33,7 +33,7 @@
 .menu {
   background-color: var(--cor-secu);
   display: none;
-  transition: all 0.5s;
+  transition: all 1.5s;
 }
 #btnmenu {
   width: 88px;
@@ -85,4 +85,29 @@
 }
 #t1tt{
   font-family: var(--fonte-mine);
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.Topics-default {
+  width: 45%;
+  margin: 20px;
+}
+.Topics-image {
+  width: 60%;
+}
+main {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+::-webkit-scrollbar {
+  width: 30px;
+  background-color: var(--cor-prin);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-terc);
+  border-radius: 10px;
 }
