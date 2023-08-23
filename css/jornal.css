@@ -1,5 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/minecraft-4");
 :root {
+  cursor: url(https://w7.pngwing.com/pngs/766/77/png-transparent-minecraft-pocket-edition-minecraft-story-mode-pickaxe-others-angle-text-pickaxe-thumbnail.png), default;
+
   background-image: url(../img/tela-fundo.png);
   /*cores*/
   --cor-prin: #586c39;
@@ -7,6 +9,9 @@
   --cor-terc: #593c2c;
   /*fontes*/
   --fonte-mine: "Minecraft", sans-serif;
+}
+body {
+  cursor: url('https://w7.pngwing.com/pngs/766/77/png-transparent-minecraft-pocket-edition-minecraft-story-mode-pickaxe-others-angle-text-pickaxe-thumbnail.png') default;
 }
 .header1 {
   background-color: var(--cor-prin);
@@ -93,9 +98,14 @@ a{
 .Topics-default {
   width: 45%;
   margin: 20px;
+  text-align: center;
 }
 .Topics-image {
-  width: 60%;
+  width: 300px;
+  height: 200px;
+  border: 2px black solid;
+  padding: 0;
+  margin: auto;
 }
 main {
   align-items: center;
@@ -110,4 +120,7 @@ main {
 ::-webkit-scrollbar-thumb {
   background-color: var(--cor-terc);
   border-radius: 10px;
+}
+@media screen and (max-width: 767) {
+  
 }
