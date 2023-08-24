@@ -221,7 +221,7 @@ nav {
 }
 .footer-main {
   width: 100%;
-  height: 100%;
+  
   background-color: var(--cor-secu);
   display: flex;
 }
