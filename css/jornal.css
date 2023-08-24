@@ -158,8 +158,8 @@ main {
     width: 100%;
   }
   #perfil-foto- {
-    width: 200px;
-    height: 150px;
+    width: auto;
+    height: auto;
   }
   .menu {
     text-align: center;
@@ -183,6 +183,9 @@ main {
   }
   .footer-div{
     font-size: 13px;
+  }
+  .perfil-geral{
+    width: auto;
   }
 }
 /*responsividade final*/
