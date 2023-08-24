@@ -13,10 +13,10 @@ if (usuarioLogado && imagemPerfil) {
 let menu = document.getElementById("menu");
 
 function abrirmenu() {
-    if (menu.style.display == "block") {
+    if (menu.style.display == "flex") {
         menu.style.display = "none";
     } else {
-        menu.style.display = "block";
+        menu.style.display = "flex";
     }
 }
 
@@ -28,7 +28,7 @@ function ExibirPerfil() {
         } else {
             ftnmse.style.display = "block";
             document.getElementById("perfil-foto").innerHTML = `<img src="${imagemPerfil}" alt="" id="perfil-foto-">`;
-            document.getElementById("perfil-nome").innerHTML = `<p>${usuarioLogado}</p>`;
+            document.getElementById("perfil-nome").innerHTML = `<p> ${usuarioLogado}</p>`;
         }
     }
 }
